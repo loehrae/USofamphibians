@@ -1,0 +1,43 @@
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fcf7f7;
+    background-color: #17ad12;
+    display: block;
+    text-align:center;
+    margin:40vh;
+    font-size: 40em;
+}
+h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h3{
+    font-style:bold;
+}
+h4{
+    color:#17ad12;
+}
+h5{
+    font-style:italic;
+}
+.description{
+    text-align:center;
+}
+button{
+    text-align:center;
+}
+.button{
+    display: flex;
+    flex direction: row;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    background-color: #17ad12;
+}
+#row{
+    display:inline-block;
+}
+#nextdoor{
+    display:inline-block;
+}
