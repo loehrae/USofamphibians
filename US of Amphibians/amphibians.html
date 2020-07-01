@@ -3,31 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/amphibians.css" />
+    <title>Amphibians</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-          <a>Home</a>
-          <a>About</a>
-          <a>Amphibians</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">US of Amphibians</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html">Home</a>
+                            <a class="dropdown-item" href="about.html">About</a>
+                            <a class="dropdown-item active" href="amphibians.html">Amphibians</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </nav>
+
         <h1>Amphibians</h1>
     </header>
-    <div>Find each state's official amphibian below.</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-8 text-xs-center text-md-left">
+                <p>Find each state's official amphibian below:</p>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <h3 id="Alabama">Alabama</h3>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img class="col-md-9" src="data:image/jpeg;base64,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" alt="Alabama amphibian">
                 </div>
             </div>
-            <div class="col-md-8">
-                <p><h4>Name:</h4>Red Hills Salamander</p>
-                <P><h5>Phaeognathus hubritchi</h5></P>
+            <div class="col-lg-8">
+                <h4>Name:</h4>Red Hills Salamander
+                <h5>Phaeognathus hubritchi</h5>
             </div>
         </div>
     </div>
@@ -38,14 +66,14 @@
     <div class="container">
         <h3 id="Arizona">Arizona</h3> 
         <div class="row"> 
-            <div class="col-md-4" >
+            <div class="col-md-7 col-lg-4" >
                 <div class="imgAbt">    
                     <img src="https://www.fws.gov/southwest/es/arizona/Images/SpeciesImages/JServoss/Amphibians/Arizona%20Treefrog%20(Hyla%20wrightorum).jpg" alt="Arizona amphibian" class="col-md-9">   
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Arizona Tree Frog</p>
-                <p><h5>Hyla eximia</h5></p>
+                <h4>Name:</h4>Arizona Tree Frog
+                <h5>Hyla eximia</h5>
             </div>
         </div>
     </div>
@@ -55,28 +83,28 @@
     <div class="container">
         <h3 id="California">California</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://www.nps.gov/rlc/pacificcoast/images/IMG_1203-960w.jpg?maxwidth=650&autorotate=false" alt="California amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4> California Red Legged Frog</p> 
-                <p><h5>Rana draytonii</h5></p>
+                <h4>Name:</h4> California Red Legged Frog 
+                <h5>Rana draytonii</h5>
             </div>
         </div>
     </div>
     <div class="container">
         <h3 id="Colorado">Colorado</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://www.nps.gov/yell/learn/nature/images/salamander-ArnoldBlotchedTigerSalamanders.jpg?maxwidth=1200&maxheight=1200&autorotate=false" alt="Colorado amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Western Tiger Salamander</p>
-                <p><h5>Ambystoma mavotium</h5></p>
+                <h4>Name:</h4>Western Tiger Salamander
+                <h5>Ambystoma mavotium</h5>
             </div>
         </div>
     </div>
@@ -92,14 +120,14 @@
     <div class="container">
         <h3 id="Georgia">Georgia</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://www.nps.gov/images/500x347_GreenTreeFrog_NPS_TheresaThom.jpg?maxwidth=1200&maxheight=1200&autorotate=false" alt="Georgia amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>American Green Tree Frog</p>  
-                <p><h5>Hyla cinarea</h5></p>
+                <h4>Name:</h4>American Green Tree Frog 
+                <h5>Hyla cinarea</h5>
             </div>
         </div>
     </div>
@@ -109,28 +137,28 @@
     <div class="container">
         <h3 id="Idaho">Idaho</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/5024.jpg" alt="Idaho amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Idaho Giant Salamander</p> 
-                <p><h5>Dicamptodon aterrimus</h5></p>
+                <h4>Name:</h4>Idaho Giant Salamander
+                <h5>Dicamptodon aterrimus</h5>
             </div>
         </div>
     </div>
     <div class="container">
         <h3 id="Illinois">Illinois</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://nature.mdc.mo.gov/sites/default/files/media/images/2015/01/eastern_tiger_salamander_1-2-15.jpg" alt="Illinois amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Eastern Tiger Salamander</p>
-                <p><h5>Ambystoma tigrinum</h5></p>    
+                <h4>Name:</h4>Eastern Tiger Salamander
+                <h5>Ambystoma tigrinum</h5>    
             </div>
         </div>
     </div>
@@ -140,28 +168,28 @@
     <div class="container"> 
         <h3 id="Iowa">Iowa</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://nature.mdc.mo.gov/sites/default/files/media/images/2010/04/bullfrogs096.jpg" alt="Iowa amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>American Bullfrog</p>
-                <p><h5>Rana catesbeiana</h5></p>
+                <h4>Name:</h4>American Bullfrog
+                <h5>Rana catesbeiana</h5>
             </div>
         </div>
     </div>
     <div class="container">
         <h3 id="Kansas">Kansas</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://gpnc.org/wp-content/uploads/sites/32/2017/11/sally-300x137.jpg" alt="Kansas amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Barred Tiger Salamander</p>  
-                <p><h5>Ambystoma mavortium</h5></p> 
+                <h4>Name:</h4>Barred Tiger Salamander  
+                <h5>Ambystoma mavortium</h5>
             </div>
         </div>
     </div> 
@@ -171,14 +199,14 @@
     <div class="container">
         <h3 id="Louisiana">Louisiana</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://www.nps.gov/images/500x347_GreenTreeFrog_NPS_TheresaThom.jpg?maxwidth=1200&maxheight=1200&autorotate=false" alt="Louisiana amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>American Green Tree Frog</p>   
-                <p><h5>Hyla cinerea</h5></p>
+                <h4>Name:</h4>American Green Tree Frog  
+                <h5>Hyla cinerea</h5>
             </div>
         </div>
     </div>
@@ -197,14 +225,14 @@
     <div class="container">
         <h3 id="Minnesota">Minnesota</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://nature.mdc.mo.gov/sites/default/files/media/images/2010/05/north_leopard_frog.jpg" alt="Minnesota amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Northern Leopard Frog</p>  
-                <p><h5>Rana pipiens</h5></p> 
+                <h4>Name:</h4>Northern Leopard Frog  
+                <h5>Rana pipiens</h5> 
             </div>
         </div>
     </div>
@@ -214,14 +242,14 @@
     <div class="container">
         <h3 id="Missouri">Missouri</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://nature.mdc.mo.gov/sites/default/files/media/images/2010/04/bullfrogs096.jpg" alt="Missouri amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>American Bullfrog</p>
-                <p><h5>Rana catesbeiana</h5></p>
+                <h4>Name:</h4>American Bullfrog
+                <h5>Rana catesbeiana</h5>
             </div>
         </div>
     </div>
@@ -235,16 +263,16 @@
         <img src="" alt="Nevada amphibian">
         <p>Name:</p>   -->
     <div class="container">
-        <h3 id="New Hampshire">New Hampshire</h3> 
+        <h3 id="New_Hampshire">New Hampshire</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://mlbs.virginia.edu/sites/mlbs.virginia.edu/files/EftN5.jpg" alt="New Hampshire amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Red-Spotted Newt</p>  
-                <p><h5>Notophthalmus viridescens</h5></p>
+                <h4>Name:</h4>Red-Spotted Newt  
+                <h5>Notophthalmus viridescens</h5>
             </div>
         </div>
     </div>
@@ -252,55 +280,55 @@
         <img src="" alt="New Jersey amphibian">
         <p>Name:</p> -->
     <div class="container">
-        <h3 id="New Mexico">New Mexico</h3> 
+        <h3 id="New_Mexico">New Mexico</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://static.inaturalist.org/photos/885786/large.jpg?1544762643" alt="New Mexico amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>New Mexico Spadefoot Toad</p>  
-                <p><h5>Spea multiplicata</h5></p> 
+                <h4>Name:</h4>New Mexico Spadefoot Toad 
+                <h5>Spea multiplicata</h5>
             </div>
         </div>
     </div>
     <div class="container">
-        <h3 id="New York">New York</h3> 
+        <h3 id="New_York">New York</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://www.nwf.org/-/media/NEW-WEBSITE/Shared-Folder/Wildlife/Amphibians/amphibian-wood-frog-MichaelZahniser-Wikimedia-600x300.ashx" alt="New York amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Wood Frog</p> 
-                <p><h5>Lithobates sylvaticus</h5></p>
+                <h4>Name:</h4>Wood Frog 
+                <h5>Lithobates sylvaticus</h5>
             </div>
         </div>
     </div>
     <div class="container">
-        <h3 id="North Carolina">North Carolina</h3> 
+        <h3 id="North_Carolina">North Carolina</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://ufwildlife.ifas.ufl.edu/images/pinebarrenstreefrogenge.jpg" alt="North Carolina amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Pine Barrens Tree Frog</p>
-                <p><h5>Hyla andersonii</h5></p>
+                <h4>Name:</h4>Pine Barrens Tree Frog
+                <h5>Hyla andersonii</h5>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://static.inaturalist.org/photos/2147/large.jpg?1545373912" alt="North Carolina amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Marbled Salamander</p>
-                <p><h5>Abystoma opacum</h5></p>
+                <h4>Name:</h4>Marbled Salamander
+                <h5>Abystoma opacum</h5>
             </div>
         </div>
     </div>
@@ -310,39 +338,39 @@
     <div class="container">
         <h3 id="Ohio">Ohio</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://nature.mdc.mo.gov/sites/default/files/media/images/2010/04/bullfrogs096.jpg" alt="Ohio amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>American Bullfrog</p> 
-                <p><h5>Rana catesbeiana</h5></p>
+                <h4>Name:</h4>American Bullfrog 
+                <h5>Rana catesbeiana</h5>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://mdc.mo.gov/sites/default/files/media/magazine/_X7A9317RGB.jpg" alt="Ohio amphibian" class="col-md-9"> 
                 </div>
             </div>  
             <div class="col-md-8">              
-                <p><h4>Name:</h4>Spotted Salamander</p>
-                <p><h5>Ambystoma maculatum</h5></p>
+                <h4>Name:</h4>Spotted Salamander
+                <h5>Ambystoma maculatum</h5>
             </div>
         </div>
     </div>
     <div class="container">
         <h3 id="Oklahoma">Oklahoma</h3>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://nature.mdc.mo.gov/sites/default/files/media/images/2010/04/bullfrogs096.jpg" alt="Oklahoma amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>American Bullfrog</p> 
-                <p><h5>Rana catesbeiana</h5></p>   
+                <h4>Name:</h4>American Bullfrog
+                <h5>Rana catesbeiana</h5>   
             </div> 
         </div>
     </div>
@@ -356,16 +384,16 @@
         <img src="" alt="Rhode Island amphibian">
         <p>Name:</p> --> 
     <div class="container">
-        <h3 id="South Carolina">South Carolina</h3> 
+        <h3 id="South_Carolina">South Carolina</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://mdc.mo.gov/sites/default/files/media/magazine/_X7A9317RGB.jpg" alt="South Carolina amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Spotted Salamander</p>
-                <p><h5>Ambystoma maculatum</h5></p>   
+                <h4>Name:</h4>Spotted Salamander
+                <h5>Ambystoma maculatum</h5>   
             </div>
         </div>
     </div>
@@ -375,28 +403,28 @@
     <div class="container">
         <h3 id="Tennessee">Tennessee</h3>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt"> 
                     <img src="https://www.tn.gov/content/dam/tn/twra/images/amphibians/tennessee-cave-salamander-006.jpg" alt="Tennessee amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Tennessee Cave Salamander</p>  
-                <p><h5>Gyrinophilus palleucus</h5></p>
+                <h4>Name:</h4>Tennessee Cave Salamander  
+                <h5>Gyrinophilus palleucus</h5>
             </div>
         </div>
     </div>
     <div class="container">
         <h3 id="Texas">Texas</h3>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://static.inaturalist.org/photos/2995569/large.jpg?1455121706" alt="Texas amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Texas Toad</p>   
-                <p><h5>Bufo speciosus</h5></p>
+                <h4>Name:</h4>Texas Toad   
+                <h5>Bufo speciosus</h5>
             </div>
         </div>
     </div>
@@ -406,14 +434,14 @@
     <div class="container">
         <h3 id="Vermont">Vermont</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">
                     <img src="https://nature.mdc.mo.gov/sites/default/files/media/images/2010/05/north_leopard_frog.jpg" alt="Vermont amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Northern Leopard Frog</p> 
-                <p><h5>Rana pipiens</h5></p>
+                <h4>Name:</h4>Northern Leopard Frog 
+                <h5>Rana pipiens</h5>
             </div>
         </div>
     </div>
@@ -423,14 +451,14 @@
     <div class="container">
         <h3 id="Washington">Washington</h3> 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7 col-lg-4">
                 <div class="imgAbt">  
                     <img src="https://www.fws.gov/uploadedImages/Region_1/NWRS/Zone_2/Willapa_Complex/Willapa/Images/tree-frog-520x289-Jackson-S.jpg" alt="Washington amphibian" class="col-md-9">
                 </div>
             </div>
             <div class="col-md-8">
-                <p><h4>Name:</h4>Pacific Tree Frog</p> 
-                <p><h5>Pseudacris regilla</h5></p>
+                <h4>Name:</h4>Pacific Tree Frog
+                <h5>Pseudacris regilla</h5>
             </div>
         </div>
     </div>
@@ -443,8 +471,14 @@
     <h3 id="Wyoming">Wyoming</h3> 
         <img src="" alt="Wyoming amphibian">
         <p>Name:</p>  --> 
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   <footer>
-    <p>United States of Amphibians</p>
-    <p>Ariana Loehr 2020</p>
+    <div class="container">
+        <p>United States of Amphibians</p>
+        <p>Ariana Loehr 2020</p>
+    </div>
   </footer>
 </body>

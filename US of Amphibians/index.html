@@ -2,30 +2,75 @@
     <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Index</title>
     <link rel="stylesheet" type="text/css" href="css/amphibians.css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/mapdata.js"></script>
+    <script src="js/usmap.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-          <a>Home</a>
-          <a>About</a>
-          <a>Amphibians</a>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">US of Amphibians</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item active" href="index.html">Home</a>
+                      <a class="dropdown-item" href="about.html">About</a>
+                      <a class="dropdown-item" href="amphibians.html">Amphibians</a>
+                    </div>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+
+
+
         <h1>The United States of Amphibians</h1>
     </header>
-    <h2>Welcome to the U.S. of Amphibians!</h2>
-      <div>Curious about the amphibians in your backyard? Use the map below to get started in learning about your friendly frog neighbors!</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6, col-md-12 text-xs-center">
+          <h2>Welcome to the U.S. of Amphibians!</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6, col-md-12 text-xs-center">
+          <div class="description"><p>Curious about the amphibians in your backyard? Use the map below to get started in learning about your friendly frog neighbors!</p></div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
     <div class="container">
       <div class="button">
         <button>Find out more!</button>
       </div>
     </div>
-    <div id="myCarousel" class="carousel slide" data-interval="false"></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   <footer>
-    <p>United States of Amphibians</p>
-    <p>Ariana Loehr 2020</p>
+    <div class="container">
+      <p>United States of Amphibians</p>
+      <p>Ariana Loehr 2020</p>
+    </div>
   </footer>
 </body>
